@@ -1,13 +1,16 @@
 name: First Workflow Using GitHub Actions
 
-run-name: | ${{ github.actor  }} has triggered this workflow 
-          using ${{ github.event_name }} event 
+run-name: >+ 
+          ${{ github.actor  }} has triggered this workflow \
+          using ${{ github.event_name }} event \
           on branch ${{ github.ref  }} of ${{github.repository}} repo.
 
 on:
-  - push:
+  push:
+    branches:
       - main
-  - pull_request:
+  pull_request:
+    branches:
       - main
 
 jobs:

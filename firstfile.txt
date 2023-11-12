@@ -1,1 +1,1 @@
-This file was missed in previous <text added after feature1 branch> commit
+This file was missed in previous <text added after feature1 branch> <some text added after feature2 branch> commit
